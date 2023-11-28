@@ -21,26 +21,26 @@
 
 exam_one = int(input("Input exam grade one: "))
 
-exam_two = int(input("Input exam grade two: "))
+exam_two = int(input("Input exam grade two: ")) #added int for an integer input#
 
-exam_three = int(input("Input exam grade three: "))
+exam_three = int(input("Input exam grade three: ")) #changed exam_3 to exam_three#
 
-grades = [exam_one, exam_two, exam_three]
+grades = [exam_one, exam_two, exam_three] #added commas#
 sum = 0
-for grade in grades:
+for grade in grades: #changed grade to grades#
   sum = sum + grade
 
-avg = sum / len(grades)
+avg = sum / len(grades) #changed grdes to grades#
 
 if avg >= 90:
     letter_grade = "A"
-elif avg >= 80 and avg < 90:
+elif avg >= 80 and avg < 90: #added colon to the end of line#
     letter_grade = "B"
-elif avg >= 70 and avg < 80:
-    letter_grade = "C"
-elif avg >= 60 and avg < 70:
+elif avg >= 70 and avg < 80: #changed 69 to 70, and added equal sign#
+    letter_grade = "C" #fixed quotation#
+elif avg >= 60 and avg < 70: #flipped less than sign, changed 69 to 60, changed greater and equal sign to less than sign, changed 65 to 70#
     letter_grade = "D"
-else:
+else:                  #changed elif to else#
     letter_grade = "F"
 
 for grade in grades:
@@ -50,7 +50,7 @@ for grade in grades:
 
     print("Grade: " + letter_grade)
 
-if letter_grade is "F":
-    print ("Student is failing.")
+if letter_grade is "F":    #changed dash to underscore#
+    print ("Student is failing.")   #added parenthesis#
 else:
-    print ("Student is passing.")
+    print ("Student is passing.")   #added parenthesis#
